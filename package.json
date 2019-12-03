@@ -1,0 +1,24 @@
+{
+  "name": "Lab02-Schemas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianandrewson/Lab02-Schemas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianandrewson/Lab02-Schemas/issues"
+  },
+  "homepage": "https://github.com/ianandrewson/Lab02-Schemas#readme"
+}
