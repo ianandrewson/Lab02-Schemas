@@ -20,10 +20,10 @@ const spot = {
     weight: '20 lbs'
 };
 
-const rover = {
-    name: 'rover',
-    age: '10'
-};
+// const rover = {
+//     name: 'rover',
+//     age: '10'
+// };
 
 const fido = {
     name: 'Fido',
