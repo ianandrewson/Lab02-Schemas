@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Schema class tests should throw an error if missing required fields or cannot cast a field 1`] = `"Cannot cast >>hi<< to Number"`;
