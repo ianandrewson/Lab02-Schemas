@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ianandrewson/Lab02-Schemas#readme",
   "devDependencies": {
-    "eslint": "^6.7.2"
+    "eslint": "^6.7.2",
+    "@types/jest": "^24.0.23"
   }
 }
