@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ianandrewson/Lab02-Schemas/issues"
   },
-  "homepage": "https://github.com/ianandrewson/Lab02-Schemas#readme"
+  "homepage": "https://github.com/ianandrewson/Lab02-Schemas#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2"
+  }
 }
