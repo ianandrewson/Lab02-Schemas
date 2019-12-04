@@ -1,7 +1,7 @@
 const { Schema } = require('../lib/schema.js');
 
 const schema = new Schema({
-    dog: {
+    name: {
         type: String,
         required: true
     }, 
