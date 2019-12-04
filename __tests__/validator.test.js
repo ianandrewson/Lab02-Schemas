@@ -52,19 +52,19 @@ describe('Validator class tests', () => {
         expect(() => {colorValidator.validate(dog);}).toThrowError('missing required field');
     });
     it('should handle all permutations of requirement, field presence, and type', () => {
+        // required and field missing
         expect(() => {colorValidator.validate(dog);}).toThrowError('missing required field');
+        // required and field there but wrong type
         expect(weightValidator.validate(dog)).toEqual('20');
+        // required and field there and right type
         expect(nameValidator.validate(dog)).toEqual('Spot');
+        // not required and field missing
         expect(() => {rabidValidator.validate(dog);}).toThrowError();
+        // not required and field there but wrong type
         expect(() => {goodBoiValidator.validate(dog);}).toThrowError();
+        // not required and field there and right type
         expect(ageValidator.validate(dog)).toBeTruthy();
     });
 });
 
 
-// required and field missing
-// required and field there but wrong type
-// required and field there and right type
-// not required and field missing
-// not required and field there but wrong type
-// not required and field there and right type
