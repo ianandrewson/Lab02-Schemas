@@ -3,7 +3,8 @@ const { Validator } = require('../lib/validator.js');
 const dog = {
     name: 'Spot',
     age: 5,
-    weight: 20
+    weight: 20,
+    goodBoi: 'true'
 };
 
 //required and field there and right type
@@ -47,14 +48,14 @@ describe('Validator class tests', () => {
         expect(nameValidator.validate(dog)).toEqual('Spot');
         expect(ageValidator.validate(dog)).toEqual(5);
     });
-    it.skip('should take an object and throw an error if field does not exist', () => {
-        expect(() => {colorValidator(dog);}).toThrowError();
+    it('should take an object and throw an error if field does not exist', () => {
+        expect(() => {colorValidator.validate(dog);}).toThrowError('missing required field');
     });
     it('should handle all permutations of requirement, field presence, and type', () => {
         expect(() => {colorValidator.validate(dog);}).toThrowError('missing required field');
         expect(weightValidator.validate(dog)).toEqual('20');
         expect(nameValidator.validate(dog)).toEqual('Spot');
-        expect(rabidValidator.validate(dog)).toBeTruthy();
+        expect(() => {rabidValidator.validate(dog);}).toThrowError();
         expect(() => {goodBoiValidator.validate(dog);}).toThrowError();
         expect(ageValidator.validate(dog)).toBeTruthy();
     });
