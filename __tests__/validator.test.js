@@ -59,7 +59,7 @@ describe('Validator class tests', () => {
         // required and field there and right type
         expect(nameValidator.validate(dog)).toEqual('Spot');
         // not required and field missing
-        expect(() => {rabidValidator.validate(dog);}).toThrowError();
+        expect(rabidValidator.validate(dog)).toEqual(undefined);
         // not required and field there but wrong type
         expect(() => {goodBoiValidator.validate(dog);}).toThrowError();
         // not required and field there and right type
