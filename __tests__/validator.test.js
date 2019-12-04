@@ -41,7 +41,7 @@ const rabidValidator = new Validator('rabid', {
 const goodBoiValidator = new Validator('goodBoi', {
     type: Boolean,
     required: false
-})
+});
 
 describe('Validator class tests', () => {
     it('should take an object and return a fields value', () => {
